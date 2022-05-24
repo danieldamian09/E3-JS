@@ -57,6 +57,7 @@ formulario.addEventListener("submit", (e) => {
 	} else {
     nombrePizza.textContent = "No se encontro la pizza";
     nombrePizza.style.color = "#ff0000";
-		precioPizza.textContent = "";
+    precioPizza.textContent = "";
+    ingredientes.textContent = "";
 	}
 });
