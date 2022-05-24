@@ -2,6 +2,7 @@
 const nombrePizza = document.querySelector("#nombrePizza");
 const precioPizza = document.querySelector("#precioPizza");
 const formulario = document.querySelector("#formulario");
+const ingredientes = document.querySelector("#ingredientes");
 const idPizza = document.querySelector("#idPizza");
 
 const pizzas = [
@@ -51,6 +52,7 @@ formulario.addEventListener("submit", (e) => {
 	if (pizzaEncontrada.length > 0) {
 		nombrePizza.textContent = pizzaEncontrada[0].nombre;
     precioPizza.textContent = pizzaEncontrada[0].precio;
+    ingredientes.textContent = pizzaEncontrada[0].ingredientes.join(", ");
     nombrePizza.style.color = "#fff";
 	} else {
     nombrePizza.textContent = "No se encontro la pizza";
