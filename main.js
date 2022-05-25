@@ -46,7 +46,12 @@ const pizzas = [
 
 
 formulario.addEventListener("submit", (e) => {
-	e.preventDefault();
+  e.preventDefault();
+  // Validacion
+  if (idPizza.value === "") {
+    alert("Por favor ingrese un id");
+    return;
+  }
 	const idPizzaBuscar = parseInt(idPizza.value);
 	const pizzaEncontrada = pizzas.filter((pizza) => pizza.id === idPizzaBuscar);
 	if (pizzaEncontrada.length > 0) {
