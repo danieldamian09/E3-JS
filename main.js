@@ -51,11 +51,11 @@ formulario.addEventListener("submit", (e) => {
 	const pizzaEncontrada = pizzas.filter((pizza) => pizza.id === idPizzaBuscar);
 	if (pizzaEncontrada.length > 0) {
 		nombrePizza.textContent = pizzaEncontrada[0].nombre;
-    precioPizza.textContent = pizzaEncontrada[0].precio;
+    precioPizza.textContent = "$" + pizzaEncontrada[0].precio;
     ingredientes.textContent = pizzaEncontrada[0].ingredientes.join(", ");
     nombrePizza.style.color = "#fff";
 	} else {
-    nombrePizza.textContent = "No se encontro la pizza";
+    nombrePizza.textContent = "No se encontro el ID de la pizza";
     nombrePizza.style.color = "#ff0000";
     precioPizza.textContent = "";
     ingredientes.textContent = "";
