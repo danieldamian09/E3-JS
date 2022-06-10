@@ -1,10 +1,12 @@
 
+// Selecciono todo lo que voy a modificar
 const nombrePizza = document.querySelector("#nombrePizza");
 const precioPizza = document.querySelector("#precioPizza");
 const formulario = document.querySelector("#formulario");
 const ingredientes = document.querySelector("#ingredientes");
 const idPizza = document.querySelector("#idPizza");
 
+// Data de la pizza
 const pizzas = [
 	{
 		id: 1,
